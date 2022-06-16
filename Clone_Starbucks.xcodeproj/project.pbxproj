@@ -17,6 +17,8 @@
 		875ADCA22859B60C00090308 /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCA02859B60C00090308 /* NewCollectionViewCell.swift */; };
 		875ADCA32859B60C00090308 /* NewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875ADCA12859B60C00090308 /* NewCollectionViewCell.xib */; };
 		875ADCA72859BE4300090308 /* HomeNewsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCA62859BE4300090308 /* HomeNewsDataModel.swift */; };
+		875ADCBB285B747200090308 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCBA285B747200090308 /* Extension.swift */; };
+		875ADCBF285B75BB00090308 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCBE285B75BB00090308 /* OrderViewController.swift */; };
 		87A3216028595EA300869C0B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3215F28595EA200869C0B /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		875ADCA02859B60C00090308 /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
 		875ADCA12859B60C00090308 /* NewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCollectionViewCell.xib; sourceTree = "<group>"; };
 		875ADCA62859BE4300090308 /* HomeNewsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsDataModel.swift; sourceTree = "<group>"; };
+		875ADCBA285B747200090308 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		875ADCBE285B75BB00090308 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		87A3215F28595EA200869C0B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +70,7 @@
 		870F4B202858D61600A3F9DF /* Clone_Starbucks */ = {
 			isa = PBXGroup;
 			children = (
+				875ADCB9285B746600090308 /* Global */,
 				870F4B36285957BD00A3F9DF /* Source */,
 				870F4B35285957B200A3F9DF /* Resource */,
 				870F4B252858D61600A3F9DF /* ViewController.swift */,
@@ -108,6 +113,7 @@
 			children = (
 				870F4B272858D61600A3F9DF /* Main.storyboard */,
 				875ADCA82859F0FB00090308 /* Home */,
+				875ADCBD285B759E00090308 /* Order */,
 			);
 			name = Screen;
 			path = ../Source/Screen;
@@ -154,6 +160,23 @@
 				875ADC9E28599C6B00090308 /* HomeViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		875ADCB9285B746600090308 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				875ADCBA285B747200090308 /* Extension.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		875ADCBD285B759E00090308 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				875ADCBE285B75BB00090308 /* OrderViewController.swift */,
+			);
+			name = Order;
+			path = Home/Order;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +258,8 @@
 				875ADCA22859B60C00090308 /* NewCollectionViewCell.swift in Sources */,
 				870F4B222858D61600A3F9DF /* AppDelegate.swift in Sources */,
 				870F4B242858D61600A3F9DF /* SceneDelegate.swift in Sources */,
+				875ADCBB285B747200090308 /* Extension.swift in Sources */,
+				875ADCBF285B75BB00090308 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

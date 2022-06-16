@@ -40,23 +40,13 @@ class HomeViewController :UIViewController{
     }
     
     private func setUI(){
-        makeShadow(view: cardRegisterView, radius: 4)
-        makeShadow(view: event2ImageView, radius: 2)
+        cardRegisterView.makeShadow(radius: 4)
+        event2ImageView.makeShadow(radius: 2)
         
-        makeCornerRound(view: cardRegisterBtn, radius: 2)
+        cardRegisterBtn.makeCornerRound(radius: 2)
     }
     
-    private func makeShadow(view : UIView, radius : CGFloat){
-        view.layer.shadowColor = UIColor.darkGray.cgColor
-        view.layer.shadowOffset = CGSize(width: 0, height: 4)
-        view.layer.shadowRadius = radius
-        view.layer.shadowOpacity = 0.3
-        view.layer.masksToBounds = false
-    }
     
-    private func makeCornerRound (view : UIView, radius : CGFloat){
-        view.layer.cornerRadius = cardRegisterBtn.bounds.size.height / radius
-    }
 }
 
 //MARK: - Collection View
