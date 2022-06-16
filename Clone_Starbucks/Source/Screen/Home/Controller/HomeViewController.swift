@@ -36,7 +36,7 @@ class HomeViewController :UIViewController{
         newsCollectionView.dataSource = self
         
         let newsCollectionCellNib = UINib(nibName: String(describing: NewCollectionViewCell.self), bundle: nil)
-        newsCollectionView.register(newsCollectionCellNib, forCellWithReuseIdentifier: "cell")
+        newsCollectionView.register(newsCollectionCellNib, forCellWithReuseIdentifier: NewCollectionViewCell.cellIdentifier)
     }
     
     private func setUI(){
@@ -56,7 +56,7 @@ extension HomeViewController : UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? NewCollectionViewCell else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NewCollectionViewCell.cellIdentifier, for: indexPath) as? NewCollectionViewCell else { return UICollectionViewCell() }
         
         cell.setData(HomeNewsDataModel.sampleData[indexPath.row])
         

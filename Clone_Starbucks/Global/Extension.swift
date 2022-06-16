@@ -19,7 +19,17 @@ extension UIView{
     }
     
     func makeCornerRound (radius : CGFloat){
-        layer.cornerRadius = bounds.size.height / radius
+        layer.cornerRadius = frame.height / radius
+        layer.masksToBounds = false
         clipsToBounds = true
+        
     }
+}
+
+extension UITableViewCell{
+    static var cellIdentifier : String{return String(describing: self)}
+}
+
+extension UICollectionViewCell{
+    static var cellIdentifier : String{return String(describing: self)}
 }

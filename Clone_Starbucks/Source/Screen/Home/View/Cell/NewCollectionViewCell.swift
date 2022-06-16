@@ -15,7 +15,7 @@ class NewCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        imageView.layer.cornerRadius = imageView.bounds.size.height / 7
+        imageView.makeCornerRound(radius: 7)
     }
     
     internal func setData(_ data: HomeNewsDataModel){
