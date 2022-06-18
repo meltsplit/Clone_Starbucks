@@ -56,7 +56,6 @@ class OrderSelectViewController : UIViewController{
         self.navigationController?.navigationBar.topItem?.title = ""
         self.navigationController?.navigationBar.tintColor = .darkGray
         
-        
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: shareNavBarBtn)
         
         tabBarController?.tabBar.isHidden = true
@@ -82,8 +81,6 @@ class OrderSelectViewController : UIViewController{
         menuImageView.image = menuImage
         menuLabel.text = menuText
         englishMenuLabel.text = englishText
-        
-        
     }
     
     @IBAction func hotIcedBtnPressed(_ sender: UIButton) {
@@ -91,8 +88,10 @@ class OrderSelectViewController : UIViewController{
         if sender == hotBtn {
             hotBtn.isSelected = true
             icedBtn.isSelected = false
+            
             hotBtn.backgroundColor = .red
             hotBtn.tintColor = .white
+            
             icedBtn.backgroundColor = .white
             icedBtn.tintColor = .darkGray
             
@@ -110,6 +109,13 @@ class OrderSelectViewController : UIViewController{
         }
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      
+        guard let orderVC = segue.destination as? OrderOrderViewController else {return }
+        orderVC.menu = menuText
+        }
+    
     
     
 }

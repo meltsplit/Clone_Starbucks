@@ -17,12 +17,10 @@ class OrderViewController :UIViewController{
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI()
         setDelegate()
     }
     //MARK: - Custom Method
-    private func setUI(){
-    }
+ 
     private func setDelegate(){
         orderMenuTableView.delegate = self
         orderMenuTableView.dataSource = self
@@ -40,9 +38,11 @@ extension OrderViewController : UITableViewDelegate, UITableViewDataSource{
         100
     }
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         OrderMenuDataModel.sampleData.count
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: OrderMenuTableViewCell.cellIdentifier, for: indexPath) as? OrderMenuTableViewCell else {return UITableViewCell()}
