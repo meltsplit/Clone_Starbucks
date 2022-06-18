@@ -27,6 +27,9 @@
 		875ADCCF285B892E00090308 /* OrderDetailMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875ADCCD285B892E00090308 /* OrderDetailMenuTableViewCell.xib */; };
 		875ADCD1285B8ABE00090308 /* OrderDetailMenuDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCD0285B8ABE00090308 /* OrderDetailMenuDataModel.swift */; };
 		875ADCD3285B8D3A00090308 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCD2285B8D3A00090308 /* Protocol.swift */; };
+		875ADCD5285D568800090308 /* OrderSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCD4285D568800090308 /* OrderSelectViewController.swift */; };
+		875ADCD7285D5A1A00090308 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCD6285D5A1A00090308 /* PaddingLabel.swift */; };
+		875ADCD9285D709200090308 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCD8285D709200090308 /* Constant.swift */; };
 		87A3216028595EA300869C0B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3215F28595EA200869C0B /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,9 @@
 		875ADCCD285B892E00090308 /* OrderDetailMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailMenuTableViewCell.xib; sourceTree = "<group>"; };
 		875ADCD0285B8ABE00090308 /* OrderDetailMenuDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailMenuDataModel.swift; sourceTree = "<group>"; };
 		875ADCD2285B8D3A00090308 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		875ADCD4285D568800090308 /* OrderSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSelectViewController.swift; sourceTree = "<group>"; };
+		875ADCD6285D5A1A00090308 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		875ADCD8285D709200090308 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		87A3215F28595EA200869C0B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +189,8 @@
 			children = (
 				875ADCBA285B747200090308 /* Extension.swift */,
 				875ADCD2285B8D3A00090308 /* Protocol.swift */,
+				875ADCD6285D5A1A00090308 /* PaddingLabel.swift */,
+				875ADCD8285D709200090308 /* Constant.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -223,6 +231,7 @@
 			children = (
 				875ADCBE285B75BB00090308 /* OrderViewController.swift */,
 				875ADCCA285B87C500090308 /* OrderDetailMenuViewController.swift */,
+				875ADCD4285D568800090308 /* OrderSelectViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -306,11 +315,14 @@
 				875ADCA72859BE4300090308 /* HomeNewsDataModel.swift in Sources */,
 				87A3216028595EA300869C0B /* SecondViewController.swift in Sources */,
 				870F4B262858D61600A3F9DF /* ViewController.swift in Sources */,
+				875ADCD5285D568800090308 /* OrderSelectViewController.swift in Sources */,
 				875ADCCE285B892E00090308 /* OrderDetailMenuTableViewCell.swift in Sources */,
 				875ADCA22859B60C00090308 /* NewCollectionViewCell.swift in Sources */,
 				870F4B222858D61600A3F9DF /* AppDelegate.swift in Sources */,
 				875ADCD1285B8ABE00090308 /* OrderDetailMenuDataModel.swift in Sources */,
 				875ADCC5285B790200090308 /* OrderMenuTableViewCell.swift in Sources */,
+				875ADCD9285D709200090308 /* Constant.swift in Sources */,
+				875ADCD7285D5A1A00090308 /* PaddingLabel.swift in Sources */,
 				875ADCC8285B7B9A00090308 /* OrderMenuDataModel.swift in Sources */,
 				870F4B242858D61600A3F9DF /* SceneDelegate.swift in Sources */,
 				875ADCBB285B747200090308 /* Extension.swift in Sources */,

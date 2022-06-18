@@ -18,7 +18,7 @@ class OrderDetailMenuTableViewCell: UITableViewCell {
     //MARK: - Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        menuImageView.makeCornerRound(radius: 4)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -28,7 +28,7 @@ class OrderDetailMenuTableViewCell: UITableViewCell {
     }
     //MARK: - Custom Method
     func setData(_ data: OrderDetailMenuDataModel){
-        menuImageView.image = UIImage(named: data.image)
+        menuImageView.image = data.image
         detailMenuLabel.text = data.detailMenu
         englishMenuLabel.text = data.englishMenu
         priceLabel.text = data.price

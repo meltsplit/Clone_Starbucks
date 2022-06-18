@@ -19,7 +19,7 @@ class OrderMenuTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        menuImageView.makeCornerRound(radius: 3)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -31,7 +31,7 @@ class OrderMenuTableViewCell: UITableViewCell {
     //MARK: - Custom Method
     
     func setData(_ data : OrderMenuDataModel ){
-        menuImageView.image = UIImage(named: data.image)
+        menuImageView.image = data.image
         menuLabel.text = data.menu
         englishMenuLabel.text = data.englishMenu
     }

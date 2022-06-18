@@ -14,6 +14,7 @@ class OrderDetailMenuViewController : UIViewController{
     //MARK: - Properties
     var menuTitleText : String = ""
     var detailMenuData : [OrderDetailMenuDataModel] = OrderDetailMenuDataModel.menu_DetailMenu["추천"]!
+    
     @IBOutlet weak var menuTitleLabel: UILabel!
     @IBOutlet weak var detailTableView: UITableView!
     
@@ -72,6 +73,13 @@ extension OrderDetailMenuViewController : UITableViewDelegate, UITableViewDataSo
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         cell.setData(detailMenuData[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectVC = storyboard?.instantiateViewController(withIdentifier: "OrderSelectViewController") as! OrderSelectViewController
+        
+        
+        navigationController?.pushViewController(selectVC, animated: true)
     }
 
 
