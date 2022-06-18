@@ -29,6 +29,13 @@ class OrderViewController :UIViewController{
         orderMenuTableView.register(myNib, forCellReuseIdentifier: OrderMenuTableViewCell.cellIdentifier)
     }
     
+    
+    @IBAction func cartBtnPressed(_ sender: UIButton) {
+        let cartVC = storyboard?.instantiateViewController(withIdentifier: "OrderCartViewController") as? OrderCartViewController
+        navigationController?.pushViewController(cartVC!, animated: true)
+    }
+    
+    
 }
 
     //MARK: - TableView
