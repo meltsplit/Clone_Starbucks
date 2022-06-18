@@ -13,15 +13,21 @@ class OrderViewController :UIViewController{
     //MARK: - Properties
     
     @IBOutlet weak var orderMenuTableView: UITableView!
+    var orderData : [OrderDataModel] = []
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setDelegate()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load2"), object: nil)
+
+        
     }
     //MARK: - Custom Method
  
     private func setDelegate(){
+        
         orderMenuTableView.delegate = self
         orderMenuTableView.dataSource = self
         
@@ -32,9 +38,18 @@ class OrderViewController :UIViewController{
     
     @IBAction func cartBtnPressed(_ sender: UIButton) {
         let cartVC = storyboard?.instantiateViewController(withIdentifier: "OrderCartViewController") as? OrderCartViewController
+        cartVC?.orderData = orderData
         navigationController?.pushViewController(cartVC!, animated: true)
+        
     }
     
+    @objc func loadList(_ notification : NSNotification)
+    {
+        // 실행되는 부분...
+        let data = notification.object as! OrderDataModel
+        orderData.append(data)
+        print("data 받았어~ \(data.menu)")
+    }
     
 }
 
@@ -72,6 +87,8 @@ extension OrderViewController : UITableViewDelegate, UITableViewDataSource{
         
         navigationController?.pushViewController(detailMenuVC, animated: true)
     }
+   
+
     
     
     

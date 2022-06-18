@@ -34,7 +34,7 @@ class OrderSelectViewController : UIViewController{
     var menuText : String = ""
     var englishText : String = ""
     var descriptionText: String = ""
-    
+    var price : String = ""
     
     //MARK: - Life Cycle
     
@@ -114,6 +114,9 @@ class OrderSelectViewController : UIViewController{
       
         guard let orderVC = segue.destination as? OrderOrderViewController else {return }
         orderVC.menu = menuText
+        orderVC.engmenu = englishText
+        orderVC.price = price
+        orderVC.image = menuImage
         }
     
     

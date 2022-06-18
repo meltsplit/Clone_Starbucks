@@ -7,9 +7,12 @@
 
 import Foundation
 import UIKit
+
 class OrderOrderViewController : UIViewController{
     
     //MARK: - Properties
+    
+    
     
     @IBOutlet weak var pageBarView: UIView!
     @IBOutlet weak var minusBtn: UIButton!
@@ -20,11 +23,19 @@ class OrderOrderViewController : UIViewController{
     @IBOutlet weak var orderBtn: UIButton!
     
     var menu : String = ""
+    var engmenu : String = ""
+    var price : String = ""
+    var image : UIImage = UIImage()
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
     }
     
     //MARK: - Custom Method
@@ -48,9 +59,18 @@ class OrderOrderViewController : UIViewController{
     @IBAction func orderBtnPressed(_ sender: UIButton) {
         let alert = UIAlertController(title: "주문 완료", message: "\(menu) 주문 완료되었습니다.", preferredStyle: UIAlertController.Style.alert)
         let okAction = UIAlertAction(title: "확인", style: .default) { (action) in
-                }
+            self.dismiss(animated: true)
+        }
         alert.addAction(okAction)
         present(alert, animated: false, completion: nil)
+        
+    }
+    
+    @IBAction func cartBtnPressed(_ sender: UIButton) {
+        //TODO
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load2"), object: OrderDataModel(image: image, menu: menu, engmenu: engmenu, price: price))
+        print("send Data : \(menu)")
+        dismiss(animated: true)
     }
     
 }

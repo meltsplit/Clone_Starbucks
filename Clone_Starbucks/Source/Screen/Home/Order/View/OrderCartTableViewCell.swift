@@ -25,7 +25,7 @@ class OrderCartTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -33,8 +33,21 @@ class OrderCartTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
     //MARK: - Custom Method
     
+    private func setUI(){
+        menuImageView.makeCornerRound(radius: 2)
+    }
+    
+    
+    func setData(data : OrderDataModel){
+        menuImageView.image = data.image
+        menuLabel.text = data.menu
+        englishMenuLabel.text = data.engmenu
+        price1Label.text = data.price
+        price2Label.text = data.price
+    }
     
     
 }
