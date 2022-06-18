@@ -12,6 +12,7 @@ class OrderSelectViewController : UIViewController{
     
     @IBOutlet weak var menuImageView: UIImageView!
     @IBOutlet weak var menuLabel: UILabel!
+    @IBOutlet weak var englishMenuLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
     
@@ -29,23 +30,10 @@ class OrderSelectViewController : UIViewController{
         return btn
     }()
     
-    var menuImage : UIImage = Image.americano_HOT {
-        didSet{
-            menuImageView.image = menuImage
-        }
-        
-    }
-    var menuText :String = "" {
-        didSet{
-            menuLabel.text = menuText
-        }
-    }
-    var descriptionText: String = "" {
-        didSet{
-            descriptionLabel.text = descriptionText
-        }
-    }
-    
+    var menuImage : UIImage = Image.americano_HOT
+    var menuText : String = ""
+    var englishText : String = ""
+    var descriptionText: String = ""
     
     
     //MARK: - Life Cycle
@@ -54,7 +42,9 @@ class OrderSelectViewController : UIViewController{
         super.viewDidLoad()
         setUI()
         setNavigation_Tab_Bar()
+        setProperties()
     }
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         tabBarController?.tabBar.isHidden = false
@@ -73,13 +63,11 @@ class OrderSelectViewController : UIViewController{
     }
     
     private func setUI(){
-        hotBtn.layer.borderWidth = 0.5
-        hotBtn.layer.borderColor = UIColor.lightGray.cgColor
+        hotBtn.makeBorder(width: 0.5, cgColor: UIColor.lightGray.cgColor)
         hotBtn.makeCornerRound(radius: 2)
         hotBtn.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMinXMinYCorner, .layerMinXMaxYCorner)
         
-        icedBtn.layer.borderWidth = 0.5
-        icedBtn.layer.borderColor = UIColor.lightGray.cgColor
+        icedBtn.makeBorder(width: 0.5, cgColor: UIColor.lightGray.cgColor)
         icedBtn.makeCornerRound(radius: 2)
         icedBtn.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMaxXMinYCorner,.layerMaxXMaxYCorner)
         
@@ -88,6 +76,14 @@ class OrderSelectViewController : UIViewController{
         for i in similarCoffeeImageView{
             i.makeCornerRound(radius: 2.2)
         }
+    }
+    
+    private func setProperties(){
+        menuImageView.image = menuImage
+        menuLabel.text = menuText
+        englishMenuLabel.text = englishText
+        
+        
     }
     
     @IBAction func hotIcedBtnPressed(_ sender: UIButton) {
@@ -99,6 +95,8 @@ class OrderSelectViewController : UIViewController{
             hotBtn.tintColor = .white
             icedBtn.backgroundColor = .white
             icedBtn.tintColor = .darkGray
+            
+            
         }
         else if sender == icedBtn{
             icedBtn.isSelected = true

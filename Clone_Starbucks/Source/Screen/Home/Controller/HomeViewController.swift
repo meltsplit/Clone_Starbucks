@@ -40,8 +40,8 @@ class HomeViewController :UIViewController{
     }
     
     private func setUI(){
-        cardRegisterView.makeShadow(radius: 4)
-        event2ImageView.makeShadow(radius: 2)
+        cardRegisterView.makeShadow(radius: 4 , offset: CGSize(width: 0, height: 4),opacity: 0.3)
+        event2ImageView.makeShadow(radius: 2 , offset: CGSize(width: 0, height: 4),opacity: 0.3)
         
         cardRegisterBtn.makeCornerRound(radius: 2)
     }

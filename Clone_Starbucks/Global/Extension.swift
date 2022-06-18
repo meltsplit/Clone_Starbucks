@@ -10,11 +10,11 @@ import UIKit
 
 extension UIView{
     
-    func makeShadow(radius : CGFloat){
+    func makeShadow(radius : CGFloat, offset : CGSize, opacity : Float){
         layer.shadowColor = UIColor.darkGray.cgColor
-        layer.shadowOffset = CGSize(width: 0, height: 4)
+        layer.shadowOffset = offset
         layer.shadowRadius = radius
-        layer.shadowOpacity = 0.3
+        layer.shadowOpacity = opacity
         layer.masksToBounds = false
     }
     
@@ -22,7 +22,11 @@ extension UIView{
         layer.cornerRadius = frame.height / radius
         layer.masksToBounds = false
         clipsToBounds = true
-        
+    }
+    
+    func makeBorder(width : CGFloat , cgColor : CGColor ){
+    layer.borderWidth = width
+    layer.borderColor = cgColor
     }
 }
 
