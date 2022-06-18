@@ -12,7 +12,7 @@ class OrderMenuTableViewCell: UITableViewCell {
     //MARK: - Properties
     
     @IBOutlet weak var menuImageView: UIImageView!
-    @IBOutlet weak var menuLabel: UILabel!
+    @IBOutlet weak var menuLabel: UILabel! 
     @IBOutlet weak var englishMenuLabel: UILabel!
     
     //MARK: - Life Cycle
