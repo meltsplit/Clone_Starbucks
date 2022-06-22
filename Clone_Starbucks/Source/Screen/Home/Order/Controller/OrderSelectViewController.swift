@@ -35,7 +35,7 @@ class OrderSelectViewController : UIViewController{
     var menuText : String = ""
     var englishText : String = ""
     var descriptionText: String = ""
-    var price : String = ""
+    var price : Int = 0
     
     //MARK: - Life Cycle
     

@@ -21,10 +21,19 @@ struct Image{
     internal static var americano_ICE = UIImage(named: "americano_ICE")!
     internal static var americano_HOT = UIImage(named: "americano_HOT")!
     internal static var noMenu = UIImage(named: "noMenu")!
+    
+    internal static var tallSize = UIImage(named: "Tall")!
+    internal static var tallSize_Fill = UIImage(named: "Tall.fill")!
+    internal static var grandeSize = UIImage(named: "Grande")!
+    internal static var grandeSize_Fill = UIImage(named: "Grande.fill")!
+    internal static var ventiSize = UIImage(named: "Venti")!
+    internal static var ventiSize_Fill = UIImage(named: "Venti.fill")!
+    
 }
 
 struct Color{
     
-    internal static var greenColor = UIColor(named: "StarbucksColor")!
+    internal static var greenColor = UIColor(named: "Starbucks_Green")!
+    internal static var greenColor2 = UIColor(named: "StarbucksColor")!
     
 }

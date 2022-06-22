@@ -9,14 +9,15 @@ import Foundation
 import RealmSwift
 
 class OrderData: Object {
+    @Persisted var image : String = ""
     
     @Persisted var menu : String = ""
     @Persisted var engMenu : String = ""
     @Persisted var price : Int = 0
     
-    @Persisted var ice : Bool = true
-    @Persisted var size : String = ""
-    @Persisted var cup : String = ""
+    @Persisted var ice : String = "Iced"
+    @Persisted var size : String = "Tall"
+    @Persisted var cup : String = "일회용컵"
     
     @Persisted var count : String = ""
     

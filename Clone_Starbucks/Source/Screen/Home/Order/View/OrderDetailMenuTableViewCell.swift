@@ -31,7 +31,7 @@ class OrderDetailMenuTableViewCell: UITableViewCell {
         menuImageView.image = data.image
         detailMenuLabel.text = data.detailMenu
         englishMenuLabel.text = data.englishMenu
-        priceLabel.text = data.price
+        priceLabel.text = "\(data.price)원"
         
     }
     

@@ -11,5 +11,5 @@ struct OrderDataModel{
     let image : UIImage
     let menu : String
     let engmenu  : String
-    let price : String
+    let price : Int
 }

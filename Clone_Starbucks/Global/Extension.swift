@@ -30,6 +30,8 @@ extension UIView{
     }
 }
 
+
+
 extension UITableViewCell{
     static var cellIdentifier : String{return String(describing: self)}
 }
@@ -37,3 +39,4 @@ extension UITableViewCell{
 extension UICollectionViewCell{
     static var cellIdentifier : String{return String(describing: self)}
 }
+

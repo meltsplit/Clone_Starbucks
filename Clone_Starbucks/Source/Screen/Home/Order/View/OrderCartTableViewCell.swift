@@ -45,8 +45,8 @@ class OrderCartTableViewCell: UITableViewCell {
         menuImageView.image = data.image
         menuLabel.text = data.menu
         englishMenuLabel.text = data.engmenu
-        priceLabel.text = data.price
-        sumPriceLabel.text = data.price
+        priceLabel.text = "\(data.price)원"
+        sumPriceLabel.text = "\(data.price)원"
     }
     
     
