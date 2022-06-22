@@ -20,6 +20,7 @@
 		8720963228634E2400591385 /* OrderMyMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720963128634E2400591385 /* OrderMyMenuViewController.swift */; };
 		8720963328634F6B00591385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870F4B272858D61600A3F9DF /* Main.storyboard */; };
 		8720963528635A2800591385 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720963428635A2800591385 /* OrderViewController.swift */; };
+		872096372863988E00591385 /* OrderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872096362863988D00591385 /* OrderData.swift */; };
 		875ADC9F28599C6B00090308 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADC9E28599C6B00090308 /* HomeViewController.swift */; };
 		875ADCA22859B60C00090308 /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCA02859B60C00090308 /* NewCollectionViewCell.swift */; };
 		875ADCA32859B60C00090308 /* NewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875ADCA12859B60C00090308 /* NewCollectionViewCell.xib */; };
@@ -56,6 +57,7 @@
 		8720962F2863475400591385 /* OrderTabmanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTabmanViewController.swift; sourceTree = "<group>"; };
 		8720963128634E2400591385 /* OrderMyMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMyMenuViewController.swift; sourceTree = "<group>"; };
 		8720963428635A2800591385 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		872096362863988D00591385 /* OrderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderData.swift; sourceTree = "<group>"; };
 		875ADC9E28599C6B00090308 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		875ADCA02859B60C00090308 /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
 		875ADCA12859B60C00090308 /* NewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				875ADCC7285B7B9A00090308 /* OrderMenuDataModel.swift */,
 				875ADCD0285B8ABE00090308 /* OrderDetailMenuDataModel.swift */,
 				87209608285DC94400591385 /* OrderDataModel.swift */,
+				872096362863988D00591385 /* OrderData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				875ADCD7285D5A1A00090308 /* PaddingLabel.swift in Sources */,
 				87209603285DA8AD00591385 /* OrderCartViewController.swift in Sources */,
 				875ADCDB285D8AC200090308 /* OrderOrderViewController.swift in Sources */,
+				872096372863988E00591385 /* OrderData.swift in Sources */,
 				875ADCC8285B7B9A00090308 /* OrderMenuDataModel.swift in Sources */,
 				870F4B242858D61600A3F9DF /* SceneDelegate.swift in Sources */,
 				8720963528635A2800591385 /* OrderViewController.swift in Sources */,

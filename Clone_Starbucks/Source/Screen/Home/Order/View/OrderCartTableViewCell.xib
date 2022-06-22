@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -113,7 +112,7 @@
                         </constraints>
                     </stackView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMr-wz-6XQ">
-                        <rect key="frame" x="15" y="15" width="45.5" height="31"/>
+                        <rect key="frame" x="15" y="15" width="49" height="34"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="square" catalog="system"/>
@@ -136,8 +135,8 @@
                 <outlet property="kindLabel" destination="cCu-8E-umY" id="bWo-h3-4Ae"/>
                 <outlet property="menuImageView" destination="LyB-jW-sCT" id="odA-1M-lOA"/>
                 <outlet property="menuLabel" destination="lFP-G3-Cb9" id="XWe-Xq-GMO"/>
-                <outlet property="price1Label" destination="wF1-BS-Rjc" id="U60-Fr-tf1"/>
-                <outlet property="price2Label" destination="aq1-L2-s54" id="3dT-ml-PmO"/>
+                <outlet property="priceLabel" destination="wF1-BS-Rjc" id="U60-Fr-tf1"/>
+                <outlet property="sumPriceLabel" destination="aq1-L2-s54" id="3dT-ml-PmO"/>
             </connections>
             <point key="canvasLocation" x="220.28985507246378" y="59.263392857142854"/>
         </tableViewCell>

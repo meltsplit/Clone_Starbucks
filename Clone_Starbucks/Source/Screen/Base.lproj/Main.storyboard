@@ -400,7 +400,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fs9-vU-kEJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2037.68115942029" y="1954.6875"/>
+            <point key="canvasLocation" x="2035" y="1754"/>
         </scene>
         <!--Order My Menu View Controller-->
         <scene sceneID="jod-0q-d1P">
@@ -683,7 +683,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hus-lu-XnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2039" y="3268"/>
+            <point key="canvasLocation" x="2035" y="2981"/>
         </scene>
         <!--Order Detail Menu View Controller-->
         <scene sceneID="91A-5a-wXr">
@@ -1585,7 +1585,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NHL-V5-qqM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2039" y="2591"/>
+            <point key="canvasLocation" x="2035" y="2330"/>
         </scene>
     </scenes>
     <designables>

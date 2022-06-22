@@ -14,6 +14,7 @@ class OrderDetailMenuViewController : UIViewController{
     //MARK: - Properties
     var menuTitleText : String = ""
     var detailMenuData : [OrderDetailMenuDataModel] = OrderDetailMenuDataModel.menu_DetailMenu["추천"]!
+    
     var orderData : [OrderDataModel] = []
     
     @IBOutlet weak var menuTitleLabel: UILabel!

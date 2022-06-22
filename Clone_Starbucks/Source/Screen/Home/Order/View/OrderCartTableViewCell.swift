@@ -17,9 +17,9 @@ class OrderCartTableViewCell: UITableViewCell {
     
     @IBOutlet weak var englishMenuLabel: UILabel!
     @IBOutlet weak var kindLabel: UILabel!
-    @IBOutlet weak var price1Label: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
-    @IBOutlet weak var price2Label: UILabel!
+    @IBOutlet weak var sumPriceLabel: UILabel!
     
     //MARK: - Life Cycle
 
@@ -45,8 +45,8 @@ class OrderCartTableViewCell: UITableViewCell {
         menuImageView.image = data.image
         menuLabel.text = data.menu
         englishMenuLabel.text = data.engmenu
-        price1Label.text = data.price
-        price2Label.text = data.price
+        priceLabel.text = data.price
+        sumPriceLabel.text = data.price
     }
     
     
