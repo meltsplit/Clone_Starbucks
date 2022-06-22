@@ -687,6 +687,8 @@
                     <connections>
                         <outlet property="orderBtn" destination="dvB-Ww-Frh" id="dHv-V3-P9Y"/>
                         <outlet property="orderCartTableView" destination="p6j-cg-6R1" id="cdC-Qe-uNy"/>
+                        <outlet property="totalCountLabel" destination="d01-s5-851" id="YKZ-BW-mjw"/>
+                        <outlet property="totalPriceLabel" destination="ow5-oz-LGk" id="kKX-QJ-B71"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hus-lu-XnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1161,10 +1163,10 @@
             </objects>
             <point key="canvasLocation" x="1265" y="4038"/>
         </scene>
-        <!--Order Order View Controller-->
+        <!--Order Final View Controller-->
         <scene sceneID="Trt-3e-DE5">
             <objects>
-                <viewController id="UDa-PM-j38" customClass="OrderOrderViewController" customModule="Clone_Starbucks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrderFinalViewController" id="UDa-PM-j38" customClass="OrderFinalViewController" customModule="Clone_Starbucks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NL2-T6-ymZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

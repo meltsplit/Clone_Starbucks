@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 struct OrderDataModel{
-    let image : UIImage
+    let image : String
     let menu : String
     let engmenu  : String
     let price : Int

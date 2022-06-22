@@ -41,12 +41,14 @@ class OrderCartTableViewCell: UITableViewCell {
     }
     
     
-    func setData(data : OrderDataModel){
-        menuImageView.image = data.image
+    func setData(data : OrderData){
+        menuImageView.image = UIImage(named: data.image)
         menuLabel.text = data.menu
-        englishMenuLabel.text = data.engmenu
+        englishMenuLabel.text = data.engMenu
+        kindLabel.text = "\(data.heat) | \(data.size) | \(data.cup)"
+        countLabel.text = "\(data.count)"
         priceLabel.text = "\(data.price)원"
-        sumPriceLabel.text = "\(data.price)원"
+        sumPriceLabel.text = "\(data.price * data.count)원"
     }
     
     

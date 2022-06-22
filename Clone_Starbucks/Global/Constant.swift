@@ -8,21 +8,22 @@
 import Foundation
 import UIKit
 struct Image{
-    internal static var coldbrew1 = UIImage(named: "coldbrew1")!
-    internal static var coldbrew2 = UIImage(named: "coldbrew2")!
-    internal static var blonde1 = UIImage(named: "blonde1")!
-    internal static var blonde2 = UIImage(named: "blonde2")!
-    internal static var espresso1 = UIImage(named: "espresso1")!
-    internal static var espresso2 = UIImage(named: "espresso2")!
-    internal static var decaf1 = UIImage(named: "decaf1")!
-    internal static var decaf2 = UIImage(named: "decaf2")!
-    internal static var frappucino1 = UIImage(named: "frappucino1")!
-    internal static var frappucino2 = UIImage(named: "frappucino2")!
-    internal static var americano_ICE = UIImage(named: "americano_ICE")!
-    internal static var americano_HOT = UIImage(named: "americano_HOT")!
-    internal static var noMenu = UIImage(named: "noMenu")!
-
     
+    internal static var coldbrew1 = "coldbrew1"
+    internal static var coldbrew2 = "coldbrew2"
+    internal static var blonde1 = "blonde1"
+    internal static var blonde2 = "blonde2"
+    internal static var espresso1 = "espresso1"
+    internal static var espresso2 = "espresso2"
+    internal static var decaf1 = "decaf1"
+    internal static var decaf2 = "decaf2"
+    internal static var frappucino1 = "frappucino1"
+    internal static var frappucino2 = "frappucino2"
+    internal static var americano_ICE = "americano_ICE"
+    internal static var americano_HOT = "americano_HOT"
+    
+    
+    internal static var noMenu = UIImage(named: "noMenu")!
     
     internal static var tallSize = UIImage(named: "Tall")!
     internal static var tallSize_Fill = UIImage(named: "Tall.fill")!
@@ -30,7 +31,7 @@ struct Image{
     internal static var grandeSize_Fill = UIImage(named: "Grande.fill")!
     internal static var ventiSize = UIImage(named: "Venti")!
     internal static var ventiSize_Fill = UIImage(named: "Venti.fill")!
-    
+
 }
 
 struct Color{
@@ -39,3 +40,17 @@ struct Color{
     internal static var greenColor2 = UIColor(named: "StarbucksColor")!
     
 }
+
+//internal static var coldbrew1 = UIImage(named: "coldbrew1")!
+//internal static var coldbrew2 = UIImage(named: "coldbrew2")!
+//internal static var blonde1 = UIImage(named: "blonde1")!
+//internal static var blonde2 = UIImage(named: "blonde2")!
+//internal static var espresso1 = UIImage(named: "espresso1")!
+//internal static var espresso2 = UIImage(named: "espresso2")!
+//internal static var decaf1 = UIImage(named: "decaf1")!
+//internal static var decaf2 = UIImage(named: "decaf2")!
+//internal static var frappucino1 = UIImage(named: "frappucino1")!
+//internal static var frappucino2 = UIImage(named: "frappucino2")!
+//internal static var americano_ICE = UIImage(named: "americano_ICE")!
+//internal static var americano_HOT = UIImage(named: "americano_HOT")!
+

@@ -28,7 +28,7 @@ class OrderDetailMenuTableViewCell: UITableViewCell {
     }
     //MARK: - Custom Method
     func setData(_ data: OrderDetailMenuDataModel){
-        menuImageView.image = data.image
+        menuImageView.image = UIImage(named: data.image)
         detailMenuLabel.text = data.detailMenu
         englishMenuLabel.text = data.englishMenu
         priceLabel.text = "\(data.price)원"

@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import RealmSwift
 
-class OrderOrderViewController : UIViewController{
+class OrderFinalViewController : UIViewController{
     
     //MARK: - Properties
     
@@ -47,6 +47,7 @@ class OrderOrderViewController : UIViewController{
     var heat : String = "ICED"
     var size : String = "Tall"
     var cup : String = "매장컵"
+    
     var count : Int = 1{
         didSet{
             countLabel.text = String(count)
@@ -54,7 +55,7 @@ class OrderOrderViewController : UIViewController{
         }
     }
     
-    var image : UIImage = UIImage()
+    var image : String = ""
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -173,11 +174,9 @@ class OrderOrderViewController : UIViewController{
     }
     
     @IBAction func cartBtnPressed(_ sender: UIButton) {
-        //TODO
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load2"), object: OrderDataModel(image: image, menu: menu, engmenu: engmenu, price: price))
-        
         
         let orderData = OrderData()
+        orderData.image = image
         orderData.menu = menu
         orderData.engMenu = engmenu
         orderData.price = price

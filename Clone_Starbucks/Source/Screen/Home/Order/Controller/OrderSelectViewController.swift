@@ -34,7 +34,7 @@ class OrderSelectViewController : UIViewController{
         return btn
     }()
     
-    var menuImage : UIImage = UIImage()
+    var menuImage : String = ""
     var menuText : String = ""
     var englishText : String = ""
     var descriptionText: String = ""
@@ -83,7 +83,7 @@ class OrderSelectViewController : UIViewController{
     }
     
     private func setProperties(){
-        menuImageView.image = menuImage
+        menuImageView.image = UIImage(named: menuImage)
         menuLabel.text = menuText
         englishMenuLabel.text = englishText
     }
@@ -107,7 +107,7 @@ class OrderSelectViewController : UIViewController{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       
-        guard let orderVC = segue.destination as? OrderOrderViewController else {return }
+        guard let orderVC = segue.destination as? OrderFinalViewController else {return }
         orderVC.menu = menuText
         orderVC.engmenu = englishText
         orderVC.price = price

@@ -7,13 +7,28 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 class OrderCartViewController : UIViewController {
     
     //MARK: - Properties
+    
+    
+    @IBOutlet weak var totalCountLabel: UILabel!
+    @IBOutlet weak var totalPriceLabel: UILabel!
     @IBOutlet weak var orderBtn: UIButton!
     @IBOutlet weak var orderCartTableView: UITableView!
     
-    var orderData : [OrderDataModel] = []
+    let realm = try! Realm()
+    lazy var orderData = realm.objects(OrderData.self)
+    
+    private var totalCount : Int = 0 {
+        didSet {totalCountLabel.text = "총 \(totalCount)개/ 20개"}
+    }
+    private var totalPrice : Int = 0{
+        didSet{
+            totalPriceLabel.text = "\(totalPrice)원"
+        }
+    }
     
     //MARK: - Life Cycle
     
@@ -22,11 +37,9 @@ class OrderCartViewController : UIViewController {
         setNavigationBar()
         setUI()
         setDelegate()
+        getData()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        print(orderData.count)
-    }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         unsetNavigationBar()
@@ -68,7 +81,13 @@ class OrderCartViewController : UIViewController {
         tabBarController?.tabBar.isHidden = false
     }
     
-    
+    private func getData(){
+        for data in orderData{
+            totalCount += data.count
+            totalPrice += data.price * data.count
+        }
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+    }
    
     
 }

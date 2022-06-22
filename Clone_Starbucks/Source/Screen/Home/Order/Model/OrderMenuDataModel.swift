@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 struct OrderMenuDataModel{
     
-    let image : UIImage
+    let image : String
     let menu : String
     let englishMenu : String
     

@@ -15,8 +15,6 @@ class OrderDetailMenuViewController : UIViewController{
     var menuTitleText : String = ""
     var detailMenuData : [OrderDetailMenuDataModel] = OrderDetailMenuDataModel.menu_DetailMenu["추천"]!
     
-    var orderData : [OrderDataModel] = []
-    
     @IBOutlet weak var menuTitleLabel: UILabel!
     @IBOutlet weak var detailTableView: UITableView!
     
@@ -36,9 +34,6 @@ class OrderDetailMenuViewController : UIViewController{
         setUI()
         setDelegate()
         setNavigationBarItem()
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load2"), object: nil)
-
     }
     
     //MARK: - Custom Method
@@ -63,17 +58,11 @@ class OrderDetailMenuViewController : UIViewController{
     
     @IBAction func cartBtnPressed(_ sender: UIButton) {
         let cartVC = storyboard?.instantiateViewController(withIdentifier: "OrderCartViewController") as? OrderCartViewController
-        cartVC?.orderData = orderData
-        navigationController?.pushViewController(cartVC!, animated: true)
         
+        navigationController?.pushViewController(cartVC!, animated: true)
     }
     
-    @objc func loadList(_ notification : NSNotification)
-    {
-        let data = notification.object as! OrderDataModel
-        orderData.append(data)
-        print("data 받았어~ \(orderData.count)")
-    }
+    
     
 }
     //MARK: - Table View Delegate

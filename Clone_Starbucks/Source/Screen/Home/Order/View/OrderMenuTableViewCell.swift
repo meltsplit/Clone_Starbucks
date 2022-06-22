@@ -31,7 +31,7 @@ class OrderMenuTableViewCell: UITableViewCell {
     //MARK: - Custom Method
     
     func setData(_ data : OrderMenuDataModel ){
-        menuImageView.image = data.image
+        menuImageView.image = UIImage(named: data.image)
         menuLabel.text = data.menu
         englishMenuLabel.text = data.englishMenu
     }
