@@ -16,7 +16,7 @@ class OrderOrderViewController : UIViewController{
     let realm = try! Realm()
     
     @IBOutlet weak var pageBarView: UIView!
-    
+    @IBOutlet weak var menuLabel: UILabel!
     
     @IBOutlet weak var tallBtn: UIButton!
     @IBOutlet weak var grandeBtn: UIButton!
@@ -47,7 +47,12 @@ class OrderOrderViewController : UIViewController{
     var ice : String = "ICED"
     var size : String = "Tall"
     var cup : String = "매장컵"
-    var count : Int = 1
+    var count : Int = 1{
+        didSet{
+            countLabel.text = String(count)
+            priceLabel.text = "\(price * count)원"
+        }
+    }
     
     var image : UIImage = UIImage()
     
@@ -55,6 +60,8 @@ class OrderOrderViewController : UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+        configUI()
+       
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -63,27 +70,34 @@ class OrderOrderViewController : UIViewController{
     }
     
     //MARK: - Custom Method
-    private func setUI(){
-        pageBarView.makeCornerRound(radius: 2)
+    private func configUI(){
+        menuLabel.text = menu
+        priceLabel.text = "\(price)원"
         
         tallBtn.setTitle("Tall", for: .disabled)
         grandeBtn.setTitle("Grande", for: .disabled)
         ventiBtn.setTitle("Venti", for: .disabled)
         
+        shopCupBtn.setTitle("매장컵", for: .disabled)
+        myCupBtn.setTitle("개인컵", for: .disabled)
+        plasticCupBtn.setTitle("일회용컵", for: .disabled)
+    }
+    
+    private func setUI(){
+        pageBarView.makeCornerRound(radius: 2)
+        
+        
         shopCupBtn.makeBorder(width: 0.5, cgColor: UIColor.lightGray.cgColor)
         shopCupBtn.makeCornerRound(radius: 2)
         shopCupBtn.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMinXMinYCorner, .layerMinXMaxYCorner)
-        shopCupBtn.setTitle("매장컵", for: .disabled)
-        
+       
         myCupBtn.makeBorder(width: 0.5, cgColor: UIColor.lightGray.cgColor)
-        myCupBtn.setTitle("개인컵", for: .disabled)
         
         plasticCupBtn.makeBorder(width: 0.5, cgColor: UIColor.lightGray.cgColor)
         plasticCupBtn.makeCornerRound(radius: 2)
         plasticCupBtn.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMaxXMinYCorner,.layerMaxXMaxYCorner)
-        plasticCupBtn.setTitle("일회용컵", for: .disabled)
         
-     
+        
         minusBtn.makeCornerRound(radius: 2)
         plusBtn.makeCornerRound(radius: 2)
         cartBtn.makeCornerRound(radius: 2)
@@ -91,10 +105,12 @@ class OrderOrderViewController : UIViewController{
         
         minusBtn.makeBorder(width: 0.8, cgColor: UIColor.darkGray.cgColor)
         plusBtn.makeBorder(width: 0.8, cgColor: UIColor.darkGray.cgColor)
-        cartBtn.makeBorder(width: 0.8, cgColor: UIColor(named: "StarbucksColor")!.cgColor)
+        cartBtn.makeBorder(width: 0.8, cgColor: Color.greenColor2.cgColor)
         
         orderView.makeShadow(radius: 5, offset: CGSize(width: 0, height: -1), opacity: 0.2)
     }
+    
+    //MARK: - IBAction
     
     @IBAction func sizeBtnPressed(_ sender: UIButton) {
         for btn in sizeBtnList {
@@ -124,7 +140,7 @@ class OrderOrderViewController : UIViewController{
                        print(cup)
                        
                    } else {
-                       // 이 함수를 호출한 버튼이 아니라면
+                
                        btn.isSelected = false
                        btn.tintColor = .darkGray
                        btn.configuration?.background.backgroundColor = .white
@@ -134,29 +150,15 @@ class OrderOrderViewController : UIViewController{
     }
     
     
-    
-    
-    
-    
-    
     @IBAction func countBtnPressed(_ sender: UIButton) {
         if plusBtn == sender {
             count = count < 20 ? count + 1 : 20
-            countLabel.text = String(count)
         }
         else {
             count = count > 0 ? count - 1 : 0
-            countLabel.text = String(count)
         }
         
     }
-    
-    
-    
-    
-    
-    
-    
     
     
     @IBAction func orderBtnPressed(_ sender: UIButton) {

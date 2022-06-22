@@ -1480,6 +1480,7 @@
                         <outlet property="cartBtn" destination="21d-I6-Gk0" id="fn4-sc-eIw"/>
                         <outlet property="countLabel" destination="YWR-Vq-Sko" id="JfO-HC-2Iz"/>
                         <outlet property="grandeBtn" destination="TqZ-vR-qJi" id="e8i-Ll-V1d"/>
+                        <outlet property="menuLabel" destination="OTJ-za-PE2" id="ZlF-P2-2JN"/>
                         <outlet property="minusBtn" destination="q1X-4G-a2T" id="DQZ-dW-oDy"/>
                         <outlet property="myCupBtn" destination="vrc-1u-yU8" id="3PU-S5-1J7"/>
                         <outlet property="orderBtn" destination="REw-TS-HxB" id="e6B-vb-c2N"/>
