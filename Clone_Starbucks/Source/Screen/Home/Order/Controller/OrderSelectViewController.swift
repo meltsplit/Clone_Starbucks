@@ -19,6 +19,9 @@ class OrderSelectViewController : UIViewController{
     
     @IBOutlet weak var hotBtn: UIButton!
     @IBOutlet weak var icedBtn: UIButton!
+    
+    @IBOutlet var heatBtnList: [UIButton]!
+    
     @IBOutlet weak var orderBtn: UIButton!
     
     @IBOutlet var similarCoffeeImageView: [UIImageView]!
@@ -35,6 +38,7 @@ class OrderSelectViewController : UIViewController{
     var menuText : String = ""
     var englishText : String = ""
     var descriptionText: String = ""
+    var heat : String = "ICED"
     var price : Int = 0
     
     //MARK: - Life Cycle
@@ -85,27 +89,18 @@ class OrderSelectViewController : UIViewController{
     }
     
     @IBAction func hotIcedBtnPressed(_ sender: UIButton) {
-        
-        if sender == hotBtn {
-            hotBtn.isSelected = true
-            icedBtn.isSelected = false
-            
-            hotBtn.backgroundColor = .red
-            hotBtn.tintColor = .white
-            
-            icedBtn.backgroundColor = .white
-            icedBtn.tintColor = .darkGray
-            
-        }
-        else if sender == icedBtn{
-            icedBtn.isSelected = true
-            hotBtn.isSelected = false
-            
-            hotBtn.backgroundColor = .white
-            hotBtn.tintColor = .darkGray
-            
-            icedBtn.backgroundColor = .blue
-            icedBtn.tintColor = .white
+        for btn in heatBtnList{
+            if btn == sender{
+                btn.isSelected = true
+                btn.tintColor = .white
+                btn.backgroundColor = btn == hotBtn ? .red : .blue
+                heat = btn == hotBtn ? "HOT" : "ICED"
+            }
+            else{
+                btn.isSelected = false
+                btn.tintColor = .darkGray
+                btn.backgroundColor = .white
+            }
         }
         
     }
@@ -117,6 +112,7 @@ class OrderSelectViewController : UIViewController{
         orderVC.engmenu = englishText
         orderVC.price = price
         orderVC.image = menuImage
+        orderVC.heat = heat
         }
     
     

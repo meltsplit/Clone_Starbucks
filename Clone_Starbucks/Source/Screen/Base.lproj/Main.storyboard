@@ -882,8 +882,8 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAG-XZ-gcL">
                                                         <rect key="frame" x="0.0" y="0.0" width="187" height="32"/>
-                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="HOT">
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -894,8 +894,8 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVx-nL-MAL">
                                                         <rect key="frame" x="187" y="0.0" width="187" height="32"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="ICED">
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -1153,6 +1153,8 @@
                         <outletCollection property="similarCoffeeImageView" destination="nyW-S3-oaz" collectionClass="NSMutableArray" id="mwd-1T-Elc"/>
                         <outletCollection property="similarCoffeeImageView" destination="Vqs-Z7-F43" collectionClass="NSMutableArray" id="oRK-rA-zfM"/>
                         <outletCollection property="similarCoffeeImageView" destination="LYG-H9-gbh" collectionClass="NSMutableArray" id="k23-fj-YyR"/>
+                        <outletCollection property="heatBtnList" destination="aAG-XZ-gcL" collectionClass="NSMutableArray" id="S3L-Qm-XtI"/>
+                        <outletCollection property="heatBtnList" destination="HVx-nL-MAL" collectionClass="NSMutableArray" id="htc-49-Sc9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vow-bB-0DV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1800,6 +1802,9 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -1811,9 +1816,6 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

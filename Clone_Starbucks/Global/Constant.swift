@@ -21,6 +21,8 @@ struct Image{
     internal static var americano_ICE = UIImage(named: "americano_ICE")!
     internal static var americano_HOT = UIImage(named: "americano_HOT")!
     internal static var noMenu = UIImage(named: "noMenu")!
+
+    
     
     internal static var tallSize = UIImage(named: "Tall")!
     internal static var tallSize_Fill = UIImage(named: "Tall.fill")!

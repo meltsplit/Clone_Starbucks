@@ -15,11 +15,11 @@ class OrderData: Object {
     @Persisted var engMenu : String = ""
     @Persisted var price : Int = 0
     
-    @Persisted var ice : String = "Iced"
+    @Persisted var heat : String = "ICED"
     @Persisted var size : String = "Tall"
     @Persisted var cup : String = "일회용컵"
     
-    @Persisted var count : String = ""
+    @Persisted var count : Int = 1
     
     
 }

@@ -44,7 +44,7 @@ class OrderOrderViewController : UIViewController{
     var engmenu : String = ""
     var price : Int = 0
     
-    var ice : String = "ICED"
+    var heat : String = "ICED"
     var size : String = "Tall"
     var cup : String = "매장컵"
     var count : Int = 1{
@@ -70,6 +70,7 @@ class OrderOrderViewController : UIViewController{
     }
     
     //MARK: - Custom Method
+    
     private func configUI(){
         menuLabel.text = menu
         priceLabel.text = "\(price)원"
@@ -174,6 +175,21 @@ class OrderOrderViewController : UIViewController{
     @IBAction func cartBtnPressed(_ sender: UIButton) {
         //TODO
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load2"), object: OrderDataModel(image: image, menu: menu, engmenu: engmenu, price: price))
+        
+        
+        let orderData = OrderData()
+        orderData.menu = menu
+        orderData.engMenu = engmenu
+        orderData.price = price
+        orderData.heat = heat
+        orderData.size = size
+        orderData.cup = cup
+        orderData.count = count
+        
+        try! realm.write{
+            realm.add(orderData)
+        }
+        
         print("send Data : \(menu)")
         dismiss(animated: true)
     }
