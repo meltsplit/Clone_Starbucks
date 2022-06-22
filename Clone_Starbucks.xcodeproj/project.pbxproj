@@ -10,19 +10,22 @@
 		375275AC57C6051A3B421098 /* Pods_Clone_Starbucks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF351A748B2938A61E560DCA /* Pods_Clone_Starbucks.framework */; };
 		870F4B222858D61600A3F9DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F4B212858D61600A3F9DF /* AppDelegate.swift */; };
 		870F4B242858D61600A3F9DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F4B232858D61600A3F9DF /* SceneDelegate.swift */; };
-		870F4B292858D61600A3F9DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870F4B272858D61600A3F9DF /* Main.storyboard */; };
 		870F4B2B2858D61700A3F9DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870F4B2A2858D61700A3F9DF /* Assets.xcassets */; };
 		870F4B2E2858D61700A3F9DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870F4B2C2858D61700A3F9DF /* LaunchScreen.storyboard */; };
 		87209603285DA8AD00591385 /* OrderCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87209602285DA8AD00591385 /* OrderCartViewController.swift */; };
 		87209606285DC1BC00591385 /* OrderCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87209604285DC1BC00591385 /* OrderCartTableViewCell.swift */; };
 		87209607285DC1BC00591385 /* OrderCartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87209605285DC1BC00591385 /* OrderCartTableViewCell.xib */; };
 		87209609285DC94400591385 /* OrderDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87209608285DC94400591385 /* OrderDataModel.swift */; };
+		872096302863475400591385 /* OrderTabmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720962F2863475400591385 /* OrderTabmanViewController.swift */; };
+		8720963228634E2400591385 /* OrderMyMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720963128634E2400591385 /* OrderMyMenuViewController.swift */; };
+		8720963328634F6B00591385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870F4B272858D61600A3F9DF /* Main.storyboard */; };
+		8720963528635A2800591385 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720963428635A2800591385 /* OrderViewController.swift */; };
 		875ADC9F28599C6B00090308 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADC9E28599C6B00090308 /* HomeViewController.swift */; };
 		875ADCA22859B60C00090308 /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCA02859B60C00090308 /* NewCollectionViewCell.swift */; };
 		875ADCA32859B60C00090308 /* NewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875ADCA12859B60C00090308 /* NewCollectionViewCell.xib */; };
 		875ADCA72859BE4300090308 /* HomeNewsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCA62859BE4300090308 /* HomeNewsDataModel.swift */; };
 		875ADCBB285B747200090308 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCBA285B747200090308 /* Extension.swift */; };
-		875ADCBF285B75BB00090308 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCBE285B75BB00090308 /* OrderViewController.swift */; };
+		875ADCBF285B75BB00090308 /* OrderTotalMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCBE285B75BB00090308 /* OrderTotalMenuViewController.swift */; };
 		875ADCC5285B790200090308 /* OrderMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCC3285B790200090308 /* OrderMenuTableViewCell.swift */; };
 		875ADCC8285B7B9A00090308 /* OrderMenuDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCC7285B7B9A00090308 /* OrderMenuDataModel.swift */; };
 		875ADCC9285B826300090308 /* OrderMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875ADCC4285B790200090308 /* OrderMenuTableViewCell.xib */; };
@@ -50,12 +53,15 @@
 		87209604285DC1BC00591385 /* OrderCartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCartTableViewCell.swift; sourceTree = "<group>"; };
 		87209605285DC1BC00591385 /* OrderCartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCartTableViewCell.xib; sourceTree = "<group>"; };
 		87209608285DC94400591385 /* OrderDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDataModel.swift; sourceTree = "<group>"; };
+		8720962F2863475400591385 /* OrderTabmanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTabmanViewController.swift; sourceTree = "<group>"; };
+		8720963128634E2400591385 /* OrderMyMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMyMenuViewController.swift; sourceTree = "<group>"; };
+		8720963428635A2800591385 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		875ADC9E28599C6B00090308 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		875ADCA02859B60C00090308 /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
 		875ADCA12859B60C00090308 /* NewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCollectionViewCell.xib; sourceTree = "<group>"; };
 		875ADCA62859BE4300090308 /* HomeNewsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsDataModel.swift; sourceTree = "<group>"; };
 		875ADCBA285B747200090308 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		875ADCBE285B75BB00090308 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		875ADCBE285B75BB00090308 /* OrderTotalMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTotalMenuViewController.swift; sourceTree = "<group>"; };
 		875ADCC3285B790200090308 /* OrderMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMenuTableViewCell.swift; sourceTree = "<group>"; };
 		875ADCC4285B790200090308 /* OrderMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderMenuTableViewCell.xib; sourceTree = "<group>"; };
 		875ADCC7285B7B9A00090308 /* OrderMenuDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMenuDataModel.swift; sourceTree = "<group>"; };
@@ -243,7 +249,10 @@
 		875ADCC2285B78C600090308 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				875ADCBE285B75BB00090308 /* OrderViewController.swift */,
+				8720963428635A2800591385 /* OrderViewController.swift */,
+				8720962F2863475400591385 /* OrderTabmanViewController.swift */,
+				875ADCBE285B75BB00090308 /* OrderTotalMenuViewController.swift */,
+				8720963128634E2400591385 /* OrderMyMenuViewController.swift */,
 				875ADCCA285B87C500090308 /* OrderDetailMenuViewController.swift */,
 				875ADCD4285D568800090308 /* OrderSelectViewController.swift */,
 				875ADCDA285D8AC200090308 /* OrderOrderViewController.swift */,
@@ -258,7 +267,6 @@
 				D4927BF8515DD614FFAB1C59 /* Pods-Clone_Starbucks.debug.xcconfig */,
 				1D6669F8FF1A81D89AB4E5C6 /* Pods-Clone_Starbucks.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -322,11 +330,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8720963328634F6B00591385 /* Main.storyboard in Resources */,
 				870F4B2E2858D61700A3F9DF /* LaunchScreen.storyboard in Resources */,
 				875ADCC9285B826300090308 /* OrderMenuTableViewCell.xib in Resources */,
 				875ADCCF285B892E00090308 /* OrderDetailMenuTableViewCell.xib in Resources */,
 				870F4B2B2858D61700A3F9DF /* Assets.xcassets in Resources */,
-				870F4B292858D61600A3F9DF /* Main.storyboard in Resources */,
 				875ADCA32859B60C00090308 /* NewCollectionViewCell.xib in Resources */,
 				87209607285DC1BC00591385 /* OrderCartTableViewCell.xib in Resources */,
 			);
@@ -385,6 +393,7 @@
 				875ADCCB285B87C500090308 /* OrderDetailMenuViewController.swift in Sources */,
 				875ADCA72859BE4300090308 /* HomeNewsDataModel.swift in Sources */,
 				87209606285DC1BC00591385 /* OrderCartTableViewCell.swift in Sources */,
+				872096302863475400591385 /* OrderTabmanViewController.swift in Sources */,
 				875ADCD5285D568800090308 /* OrderSelectViewController.swift in Sources */,
 				875ADCCE285B892E00090308 /* OrderDetailMenuTableViewCell.swift in Sources */,
 				875ADCA22859B60C00090308 /* NewCollectionViewCell.swift in Sources */,
@@ -392,14 +401,16 @@
 				875ADCD1285B8ABE00090308 /* OrderDetailMenuDataModel.swift in Sources */,
 				875ADCC5285B790200090308 /* OrderMenuTableViewCell.swift in Sources */,
 				875ADCD9285D709200090308 /* Constant.swift in Sources */,
+				8720963228634E2400591385 /* OrderMyMenuViewController.swift in Sources */,
 				875ADCD7285D5A1A00090308 /* PaddingLabel.swift in Sources */,
 				87209603285DA8AD00591385 /* OrderCartViewController.swift in Sources */,
 				875ADCDB285D8AC200090308 /* OrderOrderViewController.swift in Sources */,
 				875ADCC8285B7B9A00090308 /* OrderMenuDataModel.swift in Sources */,
 				870F4B242858D61600A3F9DF /* SceneDelegate.swift in Sources */,
+				8720963528635A2800591385 /* OrderViewController.swift in Sources */,
 				87209609285DC94400591385 /* OrderDataModel.swift in Sources */,
 				875ADCBB285B747200090308 /* Extension.swift in Sources */,
-				875ADCBF285B75BB00090308 /* OrderViewController.swift in Sources */,
+				875ADCBF285B75BB00090308 /* OrderTotalMenuViewController.swift in Sources */,
 				875ADCD3285B8D3A00090308 /* Protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
