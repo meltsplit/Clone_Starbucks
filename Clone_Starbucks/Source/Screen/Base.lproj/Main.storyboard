@@ -11,100 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="Clone_Starbucks" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j1Z-M9-cbp">
-                                <rect key="frame" x="100" y="431" width="214" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-zF-g6y">
-                                <rect key="frame" x="150" y="510" width="114" height="35.5"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="버튼">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="mainBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HPP-T9-Jr7"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGray2Color"/>
-                        <constraints>
-                            <constraint firstItem="j1Z-M9-cbp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="37X-3K-5jx"/>
-                            <constraint firstItem="Ard-zF-g6y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8PM-lq-lhD"/>
-                            <constraint firstItem="Ard-zF-g6y" firstAttribute="top" secondItem="j1Z-M9-cbp" secondAttribute="bottom" constant="45" id="Biv-YA-Jge"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ard-zF-g6y" secondAttribute="trailing" constant="150" id="KEw-BQ-oDl"/>
-                            <constraint firstItem="j1Z-M9-cbp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dlc-YT-KO4"/>
-                            <constraint firstItem="Ard-zF-g6y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="vyn-gR-WjL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j1Z-M9-cbp" secondAttribute="trailing" constant="100" id="x27-Tl-ePH"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="mainButton" destination="Ard-zF-g6y" id="QMH-Q2-koa"/>
-                        <outlet property="textField" destination="j1Z-M9-cbp" id="XaT-CL-7Wc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1578" y="-1451"/>
-        </scene>
-        <!--Second View Controller-->
-        <scene sceneID="c3K-Og-i9c">
-            <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="lhe-7w-EeD" customClass="SecondViewController" customModule="Clone_Starbucks" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Jdv-fP-wX3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8h-Ii-0gH">
-                                <rect key="frame" x="160" y="424" width="94" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujD-Ih-3Ib">
-                                <rect key="frame" x="150" y="517" width="114" height="35.5"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="버튼">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="mainBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pi4-f8-DZQ"/>
-                                    <action selector="secondBtnPressed:" destination="lhe-7w-EeD" eventType="touchUpInside" id="dsc-Ll-hU9"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="oSd-gY-l2w"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="K8h-Ii-0gH" firstAttribute="centerY" secondItem="Jdv-fP-wX3" secondAttribute="centerY" id="09L-d8-IDw"/>
-                            <constraint firstItem="K8h-Ii-0gH" firstAttribute="centerX" secondItem="Jdv-fP-wX3" secondAttribute="centerX" id="13b-XU-qTn"/>
-                            <constraint firstItem="ujD-Ih-3Ib" firstAttribute="top" secondItem="K8h-Ii-0gH" secondAttribute="bottom" constant="45" id="4kE-Jb-jIE"/>
-                            <constraint firstItem="ujD-Ih-3Ib" firstAttribute="leading" secondItem="oSd-gY-l2w" secondAttribute="leading" constant="150" id="fQk-yJ-yhu"/>
-                            <constraint firstItem="oSd-gY-l2w" firstAttribute="trailing" secondItem="ujD-Ih-3Ib" secondAttribute="trailing" constant="150" id="pk7-fG-vg4"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="secondButton" destination="ujD-Ih-3Ib" id="IEC-1U-6cb"/>
-                        <outlet property="secondLabel" destination="K8h-Ii-0gH" id="juc-T0-1Kp"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7NY-yI-kZO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2687" y="-1451"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="KTI-de-4Dv">
             <objects>
@@ -803,7 +709,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hus-lu-XnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2593" y="2957"/>
+            <point key="canvasLocation" x="2596" y="2912"/>
         </scene>
         <!--Order Detail Menu View Controller-->
         <scene sceneID="91A-5a-wXr">
@@ -946,7 +852,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="1023"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0L8-ci-8ex">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1034.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="994.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="americano_ICE" translatesAutoresizingMaskIntoConstraints="NO" id="bny-zO-uIl">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="354"/>
@@ -1019,7 +925,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="블론드/디카페인 커피 Tab에서 블론드, 디카페인, 1/2디카페인 아메리카노를 주문할 수 있습니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smz-5z-DNy" customClass="PaddingLabel" customModule="Clone_Starbucks" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="636.5" width="374" height="76"/>
+                                                <rect key="frame" x="20" y="636.5" width="374" height="36"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <edgeInsets key="layoutMargins" top="8" left="12" bottom="8" right="8"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -1041,14 +947,14 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2F-IB-SOu">
-                                                <rect key="frame" x="20" y="752.5" width="374" height="1"/>
+                                                <rect key="frame" x="20" y="712.5" width="374" height="1"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="pXn-vV-FhR"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8h5-y1-5R3">
-                                                <rect key="frame" x="20" y="773.5" width="374" height="31"/>
+                                                <rect key="frame" x="20" y="733.5" width="374" height="31"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="제품 영양 정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrB-7s-vWt">
                                                         <rect key="frame" x="0.0" y="3.5" width="329" height="24"/>
@@ -1065,7 +971,7 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1X-NV-cpe">
-                                                <rect key="frame" x="0.0" y="814.5" width="414" height="210"/>
+                                                <rect key="frame" x="0.0" y="774.5" width="414" height="210"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="비슷한 다른 메뉴" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysf-nR-9Qs">
                                                         <rect key="frame" x="22" y="25" width="118" height="21.5"/>
@@ -1288,7 +1194,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="환경을 위해 일회용 컵 사용 줄이기에 동참해 주세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gy-b7-sD2" customClass="PaddingLabel" customModule="Clone_Starbucks" customModuleProvider="target">
-                                <rect key="frame" x="20" y="84" width="374" height="34"/>
+                                <rect key="frame" x="20" y="84" width="374" height="18"/>
                                 <color key="backgroundColor" red="0.7883686259638446" green="1" blue="0.81792534257401095" alpha="0.43201572847682118" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" name="StarbucksColor"/>
@@ -1303,7 +1209,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="maj-yN-lxg">
-                                <rect key="frame" x="0.0" y="128" width="414" height="594"/>
+                                <rect key="frame" x="0.0" y="112" width="414" height="610"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUe-fK-DAz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -1573,10 +1479,10 @@
     </scenes>
     <designables>
         <designable name="1gy-b7-sD2">
-            <size key="intrinsicContentSize" width="300.5" height="34"/>
+            <size key="intrinsicContentSize" width="300.5" height="18"/>
         </designable>
         <designable name="smz-5z-DNy">
-            <size key="intrinsicContentSize" width="605" height="58"/>
+            <size key="intrinsicContentSize" width="565" height="18"/>
         </designable>
     </designables>
     <resources>
@@ -1615,9 +1521,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

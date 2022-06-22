@@ -67,6 +67,7 @@ extension OrderViewController : UITableViewDelegate, UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: OrderMenuTableViewCell.cellIdentifier, for: indexPath) as? OrderMenuTableViewCell else {return UITableViewCell()}
         
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
@@ -79,10 +80,10 @@ extension OrderViewController : UITableViewDelegate, UITableViewDataSource{
         
         let detailMenuVC = self.storyboard?.instantiateViewController(withIdentifier: "OrderDetailMenuViewController") as! OrderDetailMenuViewController
         
-        let data : OrderMenuDataModel? = OrderMenuDataModel.sampleData[indexPath.row]
+        let data : OrderMenuDataModel = OrderMenuDataModel.sampleData[indexPath.row]
         
-        detailMenuVC.menuTitleText = data!.menu
-        detailMenuVC.detailMenuData = OrderDetailMenuDataModel.menu_DetailMenu[data!.menu]!
+        detailMenuVC.menuTitleText = data.menu
+        detailMenuVC.detailMenuData = OrderDetailMenuDataModel.menu_DetailMenu[data.menu]!
         
         
         navigationController?.pushViewController(detailMenuVC, animated: true)

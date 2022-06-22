@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 class OrderSelectViewController : UIViewController{
+    
     //MARK: - Properties
     
     @IBOutlet weak var menuImageView: UIImageView!
@@ -30,7 +31,7 @@ class OrderSelectViewController : UIViewController{
         return btn
     }()
     
-    var menuImage : UIImage = Image.americano_HOT
+    var menuImage : UIImage = UIImage()
     var menuText : String = ""
     var englishText : String = ""
     var descriptionText: String = ""
@@ -94,7 +95,6 @@ class OrderSelectViewController : UIViewController{
             
             icedBtn.backgroundColor = .white
             icedBtn.tintColor = .darkGray
-            
             
         }
         else if sender == icedBtn{

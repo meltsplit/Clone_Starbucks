@@ -96,12 +96,16 @@ extension OrderDetailMenuViewController : UITableViewDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectVC = storyboard?.instantiateViewController(withIdentifier: "OrderSelectViewController") as! OrderSelectViewController
         
-        let data : OrderDetailMenuDataModel? = detailMenuData[indexPath.row]
+        let data = detailMenuData[indexPath.row]
+            
+        selectVC.menuImage = data.image
+        selectVC.menuText = data.detailMenu
+        selectVC.englishText = data.englishMenu
+        selectVC.price = data.price
         
-        selectVC.menuImage = data!.image
-        selectVC.menuText = data!.detailMenu
-        selectVC.englishText = data!.englishMenu
-        selectVC.price = data!.price
+            
+        
+        
         
         navigationController?.pushViewController(selectVC, animated: true)
     }

@@ -14,6 +14,7 @@ class OrderCartViewController : UIViewController {
     @IBOutlet weak var orderCartTableView: UITableView!
     
     var orderData : [OrderDataModel] = []
+    
     //MARK: - Life Cycle
     
     override func viewDidLoad() {
@@ -45,6 +46,7 @@ class OrderCartViewController : UIViewController {
         let nib = UINib(nibName: String(describing: OrderCartTableViewCell.self), bundle: nil)
         orderCartTableView.register(nib, forCellReuseIdentifier: OrderCartTableViewCell.cellIdentifier)
     }
+    
     private func setNavigationBar(){
         self.navigationController?.navigationBar.topItem?.title = ""
         self.navigationController?.navigationBar.tintColor = .white

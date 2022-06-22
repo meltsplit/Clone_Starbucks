@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		375275AC57C6051A3B421098 /* Pods_Clone_Starbucks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF351A748B2938A61E560DCA /* Pods_Clone_Starbucks.framework */; };
 		870F4B222858D61600A3F9DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F4B212858D61600A3F9DF /* AppDelegate.swift */; };
 		870F4B242858D61600A3F9DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F4B232858D61600A3F9DF /* SceneDelegate.swift */; };
-		870F4B262858D61600A3F9DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F4B252858D61600A3F9DF /* ViewController.swift */; };
 		870F4B292858D61600A3F9DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870F4B272858D61600A3F9DF /* Main.storyboard */; };
 		870F4B2B2858D61700A3F9DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870F4B2A2858D61700A3F9DF /* Assets.xcassets */; };
 		870F4B2E2858D61700A3F9DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870F4B2C2858D61700A3F9DF /* LaunchScreen.storyboard */; };
@@ -35,14 +35,13 @@
 		875ADCD7285D5A1A00090308 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCD6285D5A1A00090308 /* PaddingLabel.swift */; };
 		875ADCD9285D709200090308 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCD8285D709200090308 /* Constant.swift */; };
 		875ADCDB285D8AC200090308 /* OrderOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCDA285D8AC200090308 /* OrderOrderViewController.swift */; };
-		87A3216028595EA300869C0B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3215F28595EA200869C0B /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D6669F8FF1A81D89AB4E5C6 /* Pods-Clone_Starbucks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clone_Starbucks.release.xcconfig"; path = "Target Support Files/Pods-Clone_Starbucks/Pods-Clone_Starbucks.release.xcconfig"; sourceTree = "<group>"; };
 		870F4B1E2858D61600A3F9DF /* Clone_Starbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clone_Starbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		870F4B212858D61600A3F9DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		870F4B232858D61600A3F9DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		870F4B252858D61600A3F9DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		870F4B282858D61600A3F9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		870F4B2A2858D61700A3F9DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		870F4B2D2858D61700A3F9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,7 +68,8 @@
 		875ADCD6285D5A1A00090308 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		875ADCD8285D709200090308 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		875ADCDA285D8AC200090308 /* OrderOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderOrderViewController.swift; sourceTree = "<group>"; };
-		87A3215F28595EA200869C0B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		AF351A748B2938A61E560DCA /* Pods_Clone_Starbucks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clone_Starbucks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4927BF8515DD614FFAB1C59 /* Pods-Clone_Starbucks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clone_Starbucks.debug.xcconfig"; path = "Target Support Files/Pods-Clone_Starbucks/Pods-Clone_Starbucks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,17 +77,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375275AC57C6051A3B421098 /* Pods_Clone_Starbucks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CB3DFAEA7A8B976D84704A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF351A748B2938A61E560DCA /* Pods_Clone_Starbucks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		870F4B152858D61600A3F9DF = {
 			isa = PBXGroup;
 			children = (
 				870F4B202858D61600A3F9DF /* Clone_Starbucks */,
 				870F4B1F2858D61600A3F9DF /* Products */,
+				DE0DC7B2804CCCDAB257C62F /* Pods */,
+				4CB3DFAEA7A8B976D84704A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,8 +116,6 @@
 				875ADCB9285B746600090308 /* Global */,
 				870F4B36285957BD00A3F9DF /* Source */,
 				870F4B35285957B200A3F9DF /* Resource */,
-				870F4B252858D61600A3F9DF /* ViewController.swift */,
-				87A3215F28595EA200869C0B /* SecondViewController.swift */,
 			);
 			path = Clone_Starbucks;
 			sourceTree = "<group>";
@@ -243,6 +252,16 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DE0DC7B2804CCCDAB257C62F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4927BF8515DD614FFAB1C59 /* Pods-Clone_Starbucks.debug.xcconfig */,
+				1D6669F8FF1A81D89AB4E5C6 /* Pods-Clone_Starbucks.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 870F4B322858D61700A3F9DF /* Build configuration list for PBXNativeTarget "Clone_Starbucks" */;
 			buildPhases = (
+				0C1D1DE57FC10E7D67CDAA03 /* [CP] Check Pods Manifest.lock */,
 				870F4B1A2858D61600A3F9DF /* Sources */,
 				870F4B1B2858D61600A3F9DF /* Frameworks */,
 				870F4B1C2858D61600A3F9DF /* Resources */,
+				8F4C15A40239006B1A6E2A4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -313,6 +334,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C1D1DE57FC10E7D67CDAA03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Clone_Starbucks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F4C15A40239006B1A6E2A4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clone_Starbucks/Pods-Clone_Starbucks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clone_Starbucks/Pods-Clone_Starbucks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Clone_Starbucks/Pods-Clone_Starbucks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		870F4B1A2858D61600A3F9DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -321,9 +384,7 @@
 				875ADC9F28599C6B00090308 /* HomeViewController.swift in Sources */,
 				875ADCCB285B87C500090308 /* OrderDetailMenuViewController.swift in Sources */,
 				875ADCA72859BE4300090308 /* HomeNewsDataModel.swift in Sources */,
-				87A3216028595EA300869C0B /* SecondViewController.swift in Sources */,
 				87209606285DC1BC00591385 /* OrderCartTableViewCell.swift in Sources */,
-				870F4B262858D61600A3F9DF /* ViewController.swift in Sources */,
 				875ADCD5285D568800090308 /* OrderSelectViewController.swift in Sources */,
 				875ADCCE285B892E00090308 /* OrderDetailMenuTableViewCell.swift in Sources */,
 				875ADCA22859B60C00090308 /* NewCollectionViewCell.swift in Sources */,
@@ -481,6 +542,7 @@
 		};
 		870F4B332858D61700A3F9DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4927BF8515DD614FFAB1C59 /* Pods-Clone_Starbucks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -509,6 +571,7 @@
 		};
 		870F4B342858D61700A3F9DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D6669F8FF1A81D89AB4E5C6 /* Pods-Clone_Starbucks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

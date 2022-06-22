@@ -12,8 +12,6 @@ class OrderOrderViewController : UIViewController{
     
     //MARK: - Properties
     
-    
-    
     @IBOutlet weak var pageBarView: UIView!
     @IBOutlet weak var minusBtn: UIButton!
     @IBOutlet weak var plusBtn: UIButton!
@@ -41,13 +39,10 @@ class OrderOrderViewController : UIViewController{
     //MARK: - Custom Method
     private func setUI(){
         pageBarView.makeCornerRound(radius: 2)
-        
         minusBtn.makeCornerRound(radius: 2)
         plusBtn.makeCornerRound(radius: 2)
-        
         cartBtn.makeCornerRound(radius: 2)
         orderBtn.makeCornerRound(radius: 2)
-        
         
         minusBtn.makeBorder(width: 0.8, cgColor: UIColor.darkGray.cgColor)
         plusBtn.makeBorder(width: 0.8, cgColor: UIColor.darkGray.cgColor)
