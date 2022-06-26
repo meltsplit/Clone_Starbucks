@@ -134,10 +134,11 @@ class OrderCartViewController : UIViewController {
             case Situation.DeleteAll:
                 try! self.realm.write{ self.realm.deleteAll()  }
             }
+            self.orderCartTableView.reloadData()
         }
        
         
-        orderCartTableView.reloadData()
+        
     }
 }
 
