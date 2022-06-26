@@ -11,16 +11,17 @@ import RealmSwift
 class OrderCartViewController : UIViewController {
     
     //MARK: - Properties
+    let realm = try! Realm()
+    lazy var orderData = realm.objects(OrderData.self)
+    lazy var selectedData = orderData.filter("select == true")
     
+    @IBOutlet weak var selectAllBtn: UIButton!
     
     @IBOutlet weak var totalCountLabel: UILabel!
     @IBOutlet weak var totalPriceLabel: UILabel!
     @IBOutlet weak var orderBtn: UIButton!
     @IBOutlet weak var orderCartTableView: UITableView!
-    
-    let realm = try! Realm()
-    lazy var orderData = realm.objects(OrderData.self)
-    
+  
     private var totalCount : Int = 0 {
         didSet {totalCountLabel.text = "총 \(totalCount)개/ 20개"}
     }
@@ -38,6 +39,8 @@ class OrderCartViewController : UIViewController {
         setUI()
         setDelegate()
         getData()
+        
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -82,14 +85,72 @@ class OrderCartViewController : UIViewController {
     }
     
     private func getData(){
-        for data in orderData{
+        totalCount = 0
+        totalPrice = 0
+        updateSelected()
+        
+        for data in selectedData{
             totalCount += data.count
             totalPrice += data.price * data.count
         }
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
     }
-   
     
+    func updateSelected(){
+        selectedData = orderData.filter("select == true")
+        if selectedData.count == 0 {
+            orderBtn.configuration?.background.backgroundColor = .lightGray
+        }
+        else{
+            orderBtn.configuration?.background.backgroundColor = Color.greenColor2
+        }
+    }
+    //MARK: - IBAction
+
+    @IBAction func deleteBtnPressed(_ sender: UIButton) {
+        let popUpVC = storyboard?.instantiateViewController(withIdentifier: "OrderCartPopUpViewController") as! OrderCartPopUpViewController
+        popUpVC.modalPresentationStyle = .overCurrentContext
+      
+        
+        switch (sender.tag){
+        case 0 :
+            if selectedData.count == 0 {  //선택삭제
+                popUpVC.situation = Situation.NoSelect
+            }
+            else{popUpVC.situation = Situation.DeleteSelect}
+           
+        case 1 : //전체삭제
+            popUpVC.situation = Situation.DeleteAll
+        default : print("")
+        }
+        
+        present(popUpVC, animated: false)
+        
+        popUpVC.yesBtnCompletionClosure = {
+            switch (popUpVC.situation){
+            case Situation.NoSelect :
+                print("do nothing")
+            case Situation.DeleteSelect :
+                try! self.realm.write {self.realm.delete(self.selectedData)}
+            case Situation.DeleteAll:
+                try! self.realm.write{ self.realm.deleteAll()  }
+            }
+        }
+       
+        
+        orderCartTableView.reloadData()
+    }
+}
+
+extension OrderCartViewController : CartCellUpdateDelegate{
+    
+    func updateCount(_ select: Bool, _ count: Int, _ index: IndexPath, _ row: Int) {
+        try! realm.write {
+            orderData[index.row].select = select
+            orderData[index.row].count = count
+        }
+        getData()
+    }
+
 }
 
 //MARK: - TableView
@@ -98,7 +159,7 @@ extension OrderCartViewController : UITableViewDelegate,UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 250
+        return 220
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -109,7 +170,12 @@ extension OrderCartViewController : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         guard let cell = tableView.dequeueReusableCell(withIdentifier: OrderCartTableViewCell.cellIdentifier, for: indexPath) as? OrderCartTableViewCell else { return UITableViewCell()}
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
+        
+        cell.delegate = self
         cell.setData(data: orderData[indexPath.row])
+        cell.getIndexPath(indexPath, indexPath.row)
+        
 
         return cell
     }

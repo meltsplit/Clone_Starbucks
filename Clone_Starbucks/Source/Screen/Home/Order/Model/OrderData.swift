@@ -9,6 +9,8 @@ import Foundation
 import RealmSwift
 
 class OrderData: Object {
+    @Persisted var select : Bool = false
+    
     @Persisted var image : String = ""
     
     @Persisted var menu : String = ""
@@ -20,6 +22,4 @@ class OrderData: Object {
     @Persisted var cup : String = "일회용컵"
     
     @Persisted var count : Int = 1
-    
-    
 }

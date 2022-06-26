@@ -153,7 +153,7 @@ class OrderFinalViewController : UIViewController{
     
     
     @IBAction func countBtnPressed(_ sender: UIButton) {
-        if plusBtn == sender {
+        if sender == plusBtn {
             count = count < 20 ? count + 1 : 20
         }
         else {

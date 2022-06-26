@@ -15,7 +15,6 @@
 		87209603285DA8AD00591385 /* OrderCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87209602285DA8AD00591385 /* OrderCartViewController.swift */; };
 		87209606285DC1BC00591385 /* OrderCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87209604285DC1BC00591385 /* OrderCartTableViewCell.swift */; };
 		87209607285DC1BC00591385 /* OrderCartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87209605285DC1BC00591385 /* OrderCartTableViewCell.xib */; };
-		87209609285DC94400591385 /* OrderDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87209608285DC94400591385 /* OrderDataModel.swift */; };
 		872096302863475400591385 /* OrderTabmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720962F2863475400591385 /* OrderTabmanViewController.swift */; };
 		8720963228634E2400591385 /* OrderMyMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720963128634E2400591385 /* OrderMyMenuViewController.swift */; };
 		8720963328634F6B00591385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870F4B272858D61600A3F9DF /* Main.storyboard */; };
@@ -39,6 +38,7 @@
 		875ADCD7285D5A1A00090308 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCD6285D5A1A00090308 /* PaddingLabel.swift */; };
 		875ADCD9285D709200090308 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCD8285D709200090308 /* Constant.swift */; };
 		875ADCDB285D8AC200090308 /* OrderFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875ADCDA285D8AC200090308 /* OrderFinalViewController.swift */; };
+		8789454A28681F90002F823E /* OrderCartPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8789454928681F8F002F823E /* OrderCartPopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +53,6 @@
 		87209602285DA8AD00591385 /* OrderCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCartViewController.swift; sourceTree = "<group>"; };
 		87209604285DC1BC00591385 /* OrderCartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCartTableViewCell.swift; sourceTree = "<group>"; };
 		87209605285DC1BC00591385 /* OrderCartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCartTableViewCell.xib; sourceTree = "<group>"; };
-		87209608285DC94400591385 /* OrderDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDataModel.swift; sourceTree = "<group>"; };
 		8720962F2863475400591385 /* OrderTabmanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTabmanViewController.swift; sourceTree = "<group>"; };
 		8720963128634E2400591385 /* OrderMyMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMyMenuViewController.swift; sourceTree = "<group>"; };
 		8720963428635A2800591385 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +75,7 @@
 		875ADCD6285D5A1A00090308 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		875ADCD8285D709200090308 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		875ADCDA285D8AC200090308 /* OrderFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFinalViewController.swift; sourceTree = "<group>"; };
+		8789454928681F8F002F823E /* OrderCartPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCartPopUpViewController.swift; sourceTree = "<group>"; };
 		AF351A748B2938A61E560DCA /* Pods_Clone_Starbucks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clone_Starbucks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4927BF8515DD614FFAB1C59 /* Pods-Clone_Starbucks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clone_Starbucks.debug.xcconfig"; path = "Target Support Files/Pods-Clone_Starbucks/Pods-Clone_Starbucks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,7 +230,6 @@
 			children = (
 				875ADCC7285B7B9A00090308 /* OrderMenuDataModel.swift */,
 				875ADCD0285B8ABE00090308 /* OrderDetailMenuDataModel.swift */,
-				87209608285DC94400591385 /* OrderDataModel.swift */,
 				872096362863988D00591385 /* OrderData.swift */,
 			);
 			path = Model;
@@ -245,6 +244,7 @@
 				875ADCCD285B892E00090308 /* OrderDetailMenuTableViewCell.xib */,
 				87209604285DC1BC00591385 /* OrderCartTableViewCell.swift */,
 				87209605285DC1BC00591385 /* OrderCartTableViewCell.xib */,
+				8789454928681F8F002F823E /* OrderCartPopUpViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -412,9 +412,9 @@
 				875ADCC8285B7B9A00090308 /* OrderMenuDataModel.swift in Sources */,
 				870F4B242858D61600A3F9DF /* SceneDelegate.swift in Sources */,
 				8720963528635A2800591385 /* OrderViewController.swift in Sources */,
-				87209609285DC94400591385 /* OrderDataModel.swift in Sources */,
 				875ADCBB285B747200090308 /* Extension.swift in Sources */,
 				875ADCBF285B75BB00090308 /* OrderTotalMenuViewController.swift in Sources */,
+				8789454A28681F90002F823E /* OrderCartPopUpViewController.swift in Sources */,
 				875ADCD3285B8D3A00090308 /* Protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

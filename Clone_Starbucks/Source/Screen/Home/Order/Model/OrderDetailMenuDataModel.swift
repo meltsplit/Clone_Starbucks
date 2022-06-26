@@ -55,7 +55,7 @@ extension OrderDetailMenuDataModel{
     ]
     
     static var FrapupuccinoData : [OrderDetailMenuDataModel] = [
-        OrderDetailMenuDataModel(menu: "프라푸치노", image: Image.frappucino2, detailMenu: "더블 에스프레소 칩 프라푸치노", englishMenu: "StarwBerry Yummy", price: 7200),
+        OrderDetailMenuDataModel(menu: "프라푸치노", image: Image.frappucino1, detailMenu: "커피 드로잉 말차 프라푸치노", englishMenu: "StarwBerry Yummy", price: 7200),
         OrderDetailMenuDataModel(menu: "프라푸치노", image: Image.frappucino2, detailMenu: "더블 에스프레소 칩 프라푸치노", englishMenu: "StarwBerry Yummy", price: 6800)
     ]
     
